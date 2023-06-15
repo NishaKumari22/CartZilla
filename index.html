@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+  .header{
+    display:flex;
+    justify-content:space-between;
+    
+  } 
+  .cart{
+    margin-bottom: -10px;
+  }
+  
+  
+  .h1{
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+  }
+    input{
+        margin-top:20px;
+        height: 30px;
+        font-size: 15px;
+        padding-left: 10px;
+        font-family: Arial;
+    }
+    #bi{
+        color:red;
+        font-size: 35px;
+      
+    }
+    .title {
+        font-size: 20px;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+  .blank{
+    background-image: url(./Images/pop1.jpg);
+    background-repeat: no-repeat;
+    height:900px;
+    width: 1500px;
+    margin-top: 40px;
+    background-size: cover;
+    text-align:left;
+    background-attachment: fixed;
+  }
+  .huge{
+    padding-top: 100px;
+    padding-left: 80px;
+  }
+  huge span{
+    margin-bottom: 10px;
+  }
+  .shop{
+  font-weight: bold;
+  text-align: left;
+  padding-left: 100px;
+  padding-top:20px;
+  text-align: center;
+  }
+  .title span{
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .img1{
+    margin-top: -383px;
+    text-shadow: 2px 2px 4px rgb(45,139,153);
+  }
+  .row{
+    margin-top: -100px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-right: 300px;
+    background-color: rgba(255, 255, 255,0.8);
+    width: 100%;
+  }
+  .shop{
+    text-align: left;
+    
+  }
+  .row div{
+    margin-left: 50px;
+    border: 2px solid rgb(224, 164, 174);
+    border-width: 5px;
+    box-shadow: 15px 15px 10px rgb(242, 241, 241);
+   
+  }
+  button{
+    background-color: red;
+    color: aliceblue;
+    font-size: 10px;
+    padding: 2px;
+  }
+  .card{
+    display: flex;
+    margin-left: 80px;
+    background-color: rgba(255, 255, 255,0.8);
+  }
+  .card-header{
+    margin-right: 30px;
+  }
+  
+  .card1{
+    display: flex;
+    margin-left: 80px;
+    margin-top: 150px;
+  }
+  p span{
+    padding-left: 5px;
+  }
+  .card-header span{
+    color: orangered;
+  }
+  .btn{
+    height: 50px;
+    font-size: 25px;
+    width: 200px;
+      justify-content: center;
+      margin: 50px 0px 0px 600px;
+      background-color: rgb(234, 223, 223);
+      color: rgb(77, 21, 218);
+      border-style:dashed;
+      border-width: 3px;
+      border-color: rgb(0, 9, 9);
+  }
+  .btn1{
+    justify-content: left;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background-color: lightblue;
+    color: rgb(30, 20, 20);
+    border-color: chartreuse;
+    font-weight: bold;
+  }
+  .data{
+    background-image: url(./Images/sn2.jpg) ;
+    height: 300px;
+    width:900px;
+    margin: 100px 0px 0px 50px;
+    border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px; 
+  }
+  .banner{
+    background-image: url(./Images/bc3.jpg);
+    height: 300px;
+    width:400px;
+    margin:-260px 10px 60px 950px;
+    border-radius: 10px;
+  }
+  .men{
+    background-image: url(./Images/m22.jpg);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width:500px;
+    margin:50px 0px 0px 20px;
+    border-width: 5px;  
+    border-color: rgb(37, 90, 72);
+    border-radius: 5px;
+  }
+ 
+  h1{
+ 
+ padding:40px 20px 0px 20px;
+ font-size: 50px;
+ font-weight: bold;
+  }
+  .b2{
+    background-color: rgb(228, 240, 241);
+    font-size: 18px;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-width: 5px;
+    border-color: rgb(24, 9, 4);
+    margin:30px -50px 0px 20px ;
+    text-align: right;
+    color: rgb(45, 9, 9);
+    height: 40px;
+    width:150px;
+    font-weight:bold;
+    color: red;
+    text-align: center;
+  }
+  #b3{
+  
+    background-color: rgb(247, 240, 240);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    border-spacing: 10px;
+     margin-left: 8px;
+     border-width: 10px;
+  }
+  .card2{
+    display: flex;
+    justify-content: right;
+    margin: -1000px -20px 50px 10px;
+  }
+  .card3{
+    display: flex;
+    justify-content: right;
+    margin: 35px 0px 30px 200px;
+  }
+  .card-header img{
+    margin-left: px;
+  }
+  .title1{
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .sub-title1{
+        font-size: 25px;
+        padding-left: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .title2{
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .card5{
+    display: flex;
+    margin: 35px 20px 30px 20px;
+    width: 100px;
+  }
+  .card5 img{
+    margin-left:10px;
+    border: 2px solid rgb(245, 240, 240);
+  }
+  .footer-title{
+    display: flex;
+  }
+  .blog{
+   background-color: rgba(246, 188, 198, 0.3);
+   height: 200px;
+   width: 900px;
+   text-align: center;
+   padding-top: 40px;
+  }
+  .zilla{
+   background-color: rgba(177, 229, 249,0.6);
+   height: 200px;
+   width: 900px;
+   text-align: center;
+   padding-top: 40px;
+  }
+  #p1{
+    font-size: 40px;
+    color: rgb(89, 68, 242);
+  }
+  footer {
+            background-color: rgba(243, 243, 244, 0.9);
+            color: rgb(8, 4, 4);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 4fr 4fr;
+            height: 780px;
+            width: 1200px;
+            margin-top: 50px;
+        }
+
+        .left-panel {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        .right-panel {
+            margin: 10px 0px 20px 200px;
+            text-shadow:  1px 2px 2px rgb(245, 243, 243);
+        }
+
+        .footer-title1 {
+            font-weight: bold;
+            color: rgb(14, 17, 240);
+            font-size: 20px;
+        }
+
+        .footer-title~div {
+            margin-top: 10px;
+        }
+        .contact div {
+            margin-top: 20px;
+            padding-left: 50px;
+            text-shadow: 1px 2px 2px gray;
+        }
+        .private div{
+          margin-top: 15px;
+
+        }
+        .road div{
+          margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <div class="header">
+     <div class="cart">
+        <span class="bi bi-cart-fill" id="bi"></span>
+        <span class="h1">Cartzilla</span>
+     </div>
+     <div class="cart">
+       <input type="text" size="100" value="Search for Product">
+     </div>
+     <div class="cart">
+       <span class="bi bi-heart"></span>
+     </div>
+     <div class="cart">
+       <span class="bi bi-person"> Hello,Signin<br>&nbsp;&nbsp;&nbsp;My account</span>
+     </div>
+     <div class="cart">
+        <span class="bi bi-cart-x">My Cart<br>&nbsp;&nbsp;$265.00</span>
+     </div>
+     </div>
+   </header>
+   <div class="title">
+    <span><font color="red">HOME</font></span>
+    <span>SHOP</span>
+    <span>PAGES</span>
+    <span>ACCOUNT</span>
+    <span>DOCS / COMPONENTS</span>
+</div>
+<div>
+    <div class="blank">
+        <div class="huge">
+     <span><font color="white" size="7" >Has Just Arrived!!<br></font></span>
+     <span><font color="white" size="30" >Huge Summer Collection<br></font></span>
+     <span><font size="5">Swimsuit,Top,Shorts,Sunglass & much more...<br></font></span>
+     </div>
+     <div class="shop"> 
+        <button class="btn1">SHOP NOW<span class="bi bi-chevron-compact-right"></span></button>
+     </div>
+    </div>
+    </div>
+    <div class="row">
+      <div>
+         <img src="./Images/k2.png" height="300" width="250">
+          <p>MEN</p>
+      </div>
+      <div>
+        <img src="./Images/wome1.png">
+        <p>WOMEN</p>
+      </div>
+      <div>
+         <img src="./Images/kids1 - Copy.png">
+         <p>KID</p>
+      </div>
+    </div>
+   <div class="title">
+    <h1>Trending products</h1>
+   </div>
+   <div class="card">
+    <div class="card-header">
+    <img src="./Images/l1.jpeg" width="300" height="300">
+    <p>Sneakers and Keds</p>
+    <b>Women Colorlock Sneakers</b>
+    <p>$800 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+     <img src="./Images/l2.jpeg" width="300" height="300">
+     <p>T-Shirt</p>
+    <b>Cotton Lace Blouse</b>
+    <p>$120 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+      <img src="./Images/jwellery.jpg" width="300" height="300">
+      <p>Diamond jwellery</p>
+    <b>Women best collection</b>
+    <p>$5000 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+      <img src="./Images/makeup.jpeg" width="300" height="300">
+      <p>Best Makeup</p>
+    <b>Women affordable makeup start at</b>
+    <p>$100 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+   </div>
+   <div class="card1">
+    <div class="card-header">
+    <img src="./Images/t1.webp" width="300" height="300">
+    <p>Women Sport Jacket</p>
+    <b>Best Sport Jacket</b>
+    <p>$800 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+     <img src="./Images/s11.jpeg" width="300" height="300">
+     <p>Sunglasses</p>
+    <b>Sunglasses in affordable price</b>
+    <p>$120 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+      <img src="./Images/bag1.jpeg" width="300" height="300">
+      <p>Leather Bag</p>
+    <b>Women best collection</b>
+    <p>$5000 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+    <div  class="card-header">
+      <img src="./Images/sn1.jpeg" width="300" height="300">
+      <p>Leather Sneakers</p>
+    <b>Women affordable top Sneakers Collection</b>
+    <p>$100 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+      <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+      <span class="bi bi-star-half"></span></p>
+    </div>
+   </div>
+   <button class="btn">More Product<span class="bi bi-chevron-bar-right"></span></button>
+   <div class="data">
+      <div class="title2">Hurry Up!! limited time offer</div>
+      <h1 align="center">Converse All on Star Sale</h1>
+      <button class="bn">SHOP NOW</button>
+      <div class="banner">
+         <div class="title1">You Add a Banner Here</div>
+         <div class="sub-title1">Hurry up to reserver your spot</div>
+         <button class="bn">Contact US</button>
+      </div>
+   </div>
+   <div class="men">
+      <h1>Hoddie Day</h1>
+      <button class="b2">SHOP NOW<span class="bi bi-chevron-right"></span><span class="bi bi-chevron-right"></span></button>
+   </div>
+   
+    <div class="card2">
+      <div class="card-header">
+      <img src="./Images/i1.jpeg" width="250" height="300">
+      <p>Hoddie and Sweatshirt</p>
+      <b>Mono color Hodded Top</b>
+      <p>$21.9 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+      <div  class="card-header">
+       <img src="./Images/i2.jpg" width="250" height="300">
+       <p>Hoddie and Sweatshirt</p>
+      <b>Block color Hodded Top</b>
+      <p>$26.99 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+      <div  class="card-header">
+        <img src="./Images/i3.jpeg" width="250" height="300">
+        <p>Hoddie and Sweatshirt</p>
+      <b>Hoddie and Sweatshirt</b>
+      <p>$17.99 <strike>24.99</strike><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+     </div>
+     <div class="card3">
+      <div class="card-header">
+      <img src="./Images/i4.jpeg" width="300" height="300">
+      <p>Hoddie and Sweatshirt</p>
+      <b>Mono color Hodded Top</b>
+      <p>$80 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+      <div  class="card-header">
+       <img src="./Images/i5.jpg" width="220" height="300">
+       <p>Hoddie and Sweatshirt</p>
+       <b>Block color Hodded Top</b>
+      <p>$12.3 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+      <div  class="card-header">
+        <img src="./Images/i6.jpg" width="250" height="300">
+        <p>Hoddie and Sweatshirt</p>
+        <b>Block-color Hodded Top</b>
+     
+      <p>$21.99 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+        <span class="bi bi-star-half"></span></p>
+      </div>
+     </div>
+     <h2 style="text-align: center; margin-top: 20px; color: rgba(32, 29, 29,0.9); font-size: 40px;">Shop By Brand</h2>
+   <div class="card5">
+    <div>
+      <img src="./Images/c11.png">
+    </div>
+    <div>
+      <img src="./Images/c22.png">
+    </div>
+    <div>
+      <img src="./Images/c33.png">
+    </div>
+    <div>
+      <img src="./Images/c44.png">
+    </div>
+   </div>
+   <div class="card5">
+    <div>
+      <img src="./Images/c55.png">
+    </div>
+    <div>
+      <img src="./Images/c66.png">
+    </div>
+    <div>
+      <img src="./Images/c77.png">
+    </div>
+    <div>
+      <img src="./Images/c88.png">
+    </div>
+   </div>
+   <div class="card5">
+    <div>
+      <img src="./Images/c.png">
+    </div>
+    <div>
+      <img src="./Images/f.png">
+    </div>
+    <div>
+      <img src="./Images/s0.png">
+    </div>
+    <div>
+      <img src="./Images/b0.png">
+    </div>
+   </div>
+   <div class="footer-title">
+     <div class="blog">
+      <span class="bi bi-facebook" id="p1"></span>
+      <h3>Read the Blog</h3>
+      <p>Latest Store Fashion New on trends</p>
+     </div>
+     <div class="zilla">
+      <span class="bi  bi-instagram" id="p1"></span>
+      <h3>follow on Instagram</h3>
+      <p>#ShopwithcartZilla</p>
+     </div>
+   </div>
+   <footer>
+    <div class="left-panel">
+        <div class="contact">
+            <div class="footer-title1">SHOP DEPARTMENTS</div>
+            <div>Contact US for this</div>
+            <div>Carrers for this</div>
+            <div>Flipkart Stories</div>
+            <div>Press on this</div>
+            <div>Flipkart Wholsale</div>
+            <div>Payments for this</div>
+            <div>Shipping</div>
+            <div>Cancellation Returns</div>
+            <div>FAQs for Cartzilla</div>
+            <div>Payments on this</div>
+            <div>Shipping early </div>
+        </div>
+
+    <div class="right-panel">
+        <div class="private">
+            <div class="footer-title1">ABOUT OUR WEB</div>
+            <div>Flipkart Internet Private Limited,</div>
+            <div>Buildings Alyssa, Begonia &</div>
+            <div>Clove Embassy Tech Village,</div>
+            <div>Outer Ring Road, Devarabeesanahalli Village,</div>
+            <div>Bengaluru, 560103,</div>
+            <div>Karnataka, India</div>
+        </div>
+
+        </div>
+       
+      </div>
+        <div>
+          <input type="email" placeholder="Enter Your Email id">
+        </div>
+
+</footer>
+</body>
+</html>
